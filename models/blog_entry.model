@@ -1,0 +1,10 @@
+name: blog_entry
+backend: production()
+
+fields:
+    id :: primary_key(auto_increment)
+    title :: string(max_length = 255, index)
+    author :: one_to_one(user.id)
+    tags :: one_to_many(tags.id)
+    created :: datetime()
+    text :: string()
