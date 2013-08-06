@@ -8,5 +8,9 @@
                   stdlib
                  ]},
   {mod, { erl_db_model_app, []}},
-  {env, []}
+  {env, [{db_pools, [{production,
+                      erl_db_mnesia,
+                      [{size,5}, {max_overflow, 10}],
+                      []}
+                    ]}}
  ]}.
