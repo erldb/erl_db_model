@@ -12,5 +12,5 @@
                       erl_db_mnesia,
                       [{size,5}, {max_overflow, 10}],
                       []}
-                    ]}}
+                    ]}]}
  ]}.
